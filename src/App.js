@@ -1,7 +1,7 @@
 import { BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 import Angle from './comps/Angle';
-import Area from './comps/Area';
+import Area from './comps/Area/Area';
 import Hypo from './comps/Hypo';
 import Quiz from './comps/Quiz';
 import Home from './comps/Home';

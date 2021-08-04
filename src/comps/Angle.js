@@ -54,6 +54,7 @@ const Angle = () => {
             onChange={(e) => setA3(e.target.value)}
           />
         </div>
+        <br></br>
         <div className="btn">
           <button className="sub-btn" onSubmit={handleSub}>
             Submit

@@ -114,7 +114,7 @@ i{
 
 
 .sub-btn{
-  padding: 1%;
+  padding: 1.5%;
   color: white;
   border-radius: 20px;
   border-color: var(--priary-color);
@@ -138,7 +138,46 @@ i{
   background: white;
   border-radius: 5px;
   margin: 1% 30%;
-  padding: 1rem;
+  padding: 2%;
   font-weight: bold;
   font-size: 17px;
 }
+
+.area{
+  padding-top: 10%;
+  /* max-width: 450px; */
+  color: white;
+  /* text-align: center; */
+  /* display: grid;
+  justify-content: center!important;
+  flex-direction: column; */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.radio {
+  padding: 0.5rem 1rem;
+  white-space: normal;
+  
+}
+
+.radio label{
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  display: inline-block;
+}
+
+.radio input {
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  display: inline-block;
+}
+
+#calarea{
+  text-align: left;
+}
+
+.first{
+  text-align: center;
+ 
+}
+
