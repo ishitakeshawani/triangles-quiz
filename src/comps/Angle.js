@@ -7,7 +7,9 @@ const Angle = () => {
 
   let [text, setText] = useState("Output will be shown here");
 
-  const handleSub = () => {
+  const handleSub  = (e) =>{
+    e.preventDefault();
+  
     if (parseInt(a1) + parseInt(a2) + parseInt(a3) === 180) {
       setText("Yuhu! these angles can make a triangle");
     } else {
@@ -17,7 +19,7 @@ const Angle = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSub}>
         <div className="angles">
           <h2>
             Enter the angles in below input boxes and <br></br>
@@ -29,7 +31,7 @@ const Angle = () => {
             type="number"
             min="1"
             max="180"
-            value={a1}
+            value={a1 || ''}
             required
             onChange={(e) => {
               setA1(e.target.value);
@@ -40,7 +42,7 @@ const Angle = () => {
             type="number"
             min="1"
             max="180"
-            value={a2}
+            value={a2 || ''}
             required
             onChange={(e) => setA2(e.target.value)}
           />
@@ -49,14 +51,14 @@ const Angle = () => {
             type="number"
             min="1"
             max="180"
-            value={a3}
+            value={a3 || ''}
             required
             onChange={(e) => setA3(e.target.value)}
           />
         </div>
         <br></br>
         <div className="btn">
-          <button className="sub-btn" onSubmit={handleSub}>
+          <button className="sub-btn">
             Submit
           </button>
           <div className="output">{text}</div>

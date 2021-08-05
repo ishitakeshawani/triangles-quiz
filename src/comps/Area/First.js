@@ -3,20 +3,20 @@ import { React,useState } from 'react';
 const First = () => {
   const [base, setbase] = useState();
   const [side, setside] = useState();
-  let [ttext, setttext] = useState("Area= 1/2*base*height");
+  const [ttext, setttext] = useState("Area= 1/2*base*height");
 
   let area = 1/2*parseInt(base)*parseInt(side);
 
-  const handlearea = () => {
-    
-    setttext("3");
+  const handlearea = event =>{
+   event.preventDefault();
+    setttext(area);
   }
 
 
 
     return (
       <div className="first">
-        <form>
+        <form onSubmit={handlearea}>
           <label htmlFor="text">base= </label>
           <input
             className="input-angle"
@@ -43,7 +43,7 @@ const First = () => {
               setside(e.target.value);
             }}
           />
-          <button className="sub-btn" onSubmit={handlearea}>
+          <button className="sub-btn">
             Submit
           </button>
           <h2>Area will be calculated here-</h2>
