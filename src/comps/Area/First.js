@@ -5,12 +5,12 @@ const First = () => {
   const [side, setside] = useState();
   const [ttext, setttext] = useState("Area= 1/2*base*height");
 
-  let area = 1/2*parseInt(base)*parseInt(side);
+  let area = 1/2*parseFloat(base)*parseFloat(side);
 
-  const handlearea = event =>{
-   event.preventDefault();
+  const handlearea = (event) => {
+    event.preventDefault();
     setttext(area);
-  }
+  };
 
 
 
@@ -43,9 +43,7 @@ const First = () => {
               setside(e.target.value);
             }}
           />
-          <button className="sub-btn">
-            Submit
-          </button>
+          <button className="sub-btn">calculate</button>
           <h2>Area will be calculated here-</h2>
           <div className="output">{ttext}</div>
         </form>
