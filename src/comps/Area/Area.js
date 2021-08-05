@@ -1,5 +1,6 @@
 import React from 'react';
 import First from './First';
+import Second from './Second';
 
 const Area = () => {
   const [status, setStatus] = React.useState(0);
@@ -54,7 +55,7 @@ const Area = () => {
           </div>
         </form>
         {status === 1 && <First />}
-        {status === 2 && "2"}
+        {status === 2 && <Second />}
         {status === 3 && "3"}
       </div>
     );
