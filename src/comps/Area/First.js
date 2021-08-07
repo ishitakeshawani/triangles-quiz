@@ -17,33 +17,37 @@ const First = () => {
     return (
       <div className="first">
         <form onSubmit={handlearea}>
-          <label htmlFor="text">base= </label>
-          <input
-            className="input-angle"
-            type="number"
-            min="0.0001"
-            // max="180"
-            value={base}
-            step="0.00001"
-            required
-            onChange={(e) => {
-              setbase(e.target.value);
-            }}
-          />
-          <label htmlFor="text">height= </label>
-          <input
-            className="input-angle"
-            type="number"
-            min="0.0001"
-            // max="180"
-            value={side}
-            required
-            step="0.00001"
-            onChange={(e) => {
-              setside(e.target.value);
-            }}
-          />
-          <button className="sub-btn">calculate</button>
+          <label htmlFor="text">
+            base=
+            <input
+              className="input-angle"
+              type="number"
+              min="0.0001"
+              // max="180"
+              value={base}
+              step="0.00001"
+              required
+              onChange={(e) => {
+                setbase(e.target.value);
+              }}
+            />
+          </label>
+          <label htmlFor="text">
+            height=
+            <input
+              className="input-angle"
+              type="number"
+              min="0.0001"
+              // max="180"
+              value={side}
+              required
+              step="0.00001"
+              onChange={(e) => {
+                setside(e.target.value);
+              }}
+            />
+          </label>
+          <button className="sub-btnn">calculate</button>
           <h2>Area will be calculated here-</h2>
           <div className="output">{ttext}</div>
         </form>

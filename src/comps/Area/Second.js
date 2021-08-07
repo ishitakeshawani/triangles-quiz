@@ -21,43 +21,49 @@ const Second = () => {
     return (
       <div className="first">
         <form onSubmit={handleSecond}>
-          <label htmlFor="text">a= </label>
-          <input
-            className="input-angle"
-            type="number"
-            min="0.0001"
-            value={a}
-            step="0.00001"
-            required
-            onChange={(e) => {
-              seta(e.target.value);
-            }}
-          />
-          <label htmlFor="text">b= </label>
-          <input
-            className="input-angle"
-            type="number"
-            min="0.0001"
-            value={b}
-            step="0.00001"
-            required
-            onChange={(e) => {
-              setb(e.target.value);
-            }}
-          />
-          <label htmlFor="text">c= </label>
-          <input
-            className="input-angle"
-            type="number"
-            min="0.0001"
-            value={c}
-            step="0.00001"
-            required
-            onChange={(e) => {
-              setc(e.target.value);
-            }}
-          />
-          <button className="sub-btn">calculate</button>
+          <label htmlFor="text">
+            a=
+            <input
+              className="input-angle"
+              type="number"
+              min="0.0001"
+              value={a}
+              step="0.00001"
+              required
+              onChange={(e) => {
+                seta(e.target.value);
+              }}
+            />
+          </label>
+          <label htmlFor="text">
+            b=
+            <input
+              className="input-angle"
+              type="number"
+              min="0.0001"
+              value={b}
+              step="0.00001"
+              required
+              onChange={(e) => {
+                setb(e.target.value);
+              }}
+            />
+          </label>
+          <label htmlFor="text">
+            c=
+            <input
+              className="input-angle"
+              type="number"
+              min="0.0001"
+              value={c}
+              step="0.00001"
+              required
+              onChange={(e) => {
+                setc(e.target.value);
+              }}
+            />
+          </label>
+          <button className="sub-btnn">calculate</button>
           <h2>Area will be calculated here-</h2>
           <div className="output">{ans}</div>
           <p>{s}</p>
