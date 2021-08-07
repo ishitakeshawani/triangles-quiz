@@ -1,6 +1,7 @@
 import React from 'react';
 import First from './First';
 import Second from './Second';
+import Third from './Third';
 
 const Area = () => {
   const [status, setStatus] = React.useState(0);
@@ -12,9 +13,9 @@ const Area = () => {
 
     return (
       <div className="area">
-        <h2 style={{ textAlign: "center" }}>Calculate Area</h2>
+        <h2>Calculate Area</h2>
         <h3>Select an option below as per the data you have for a triangle</h3>
-        <form>
+        <form className="radioform">
           <div className="radio">
             <label htmlFor="area">
               <input
@@ -56,7 +57,7 @@ const Area = () => {
         </form>
         {status === 1 && <First />}
         {status === 2 && <Second />}
-        {status === 3 && "3"}
+        {status === 3 && <Third />}
       </div>
     );
     
