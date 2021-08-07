@@ -50,9 +50,7 @@ a{
   padding-left: 40px;
 }
 
-.nav a:hover{
-  font-weight: bold;
-}
+
 
 .page{
   color: white;
@@ -114,13 +112,16 @@ i{
 
 
 .sub-btn{
-  padding: 1.5%;
+  padding: 1%;
   color: white;
   border-radius: 20px;
   border-color: var(--priary-color);
   background: #2292c0;
   font-weight: bold;
-  
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto 1rem;
 }
 
 .sub-btn:hover{
@@ -138,22 +139,41 @@ i{
   background: white;
   border-radius: 5px;
   margin: 1% 30%;
-  padding: 2%;
+  padding: 1%;
   font-weight: bold;
   font-size: 17px;
 }
 
 .area{
   padding-top: 10%;
-  /* max-width: 450px; */
+  max-width: 550px;
   color: white;
-  /* text-align: center; */
+  text-align: center;
   /* display: grid;
   justify-content: center!important;
   flex-direction: column; */
   margin-left: 20%;
   margin-right: 20%;
 }
+
+.sub-btnn{
+  padding: 1.5%;
+  color: white;
+  border-radius: 20px;
+  border-color: var(--priary-color);
+  background: #2292c0;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto 1rem;
+}
+
+.sub-btnn:hover{
+  color: #06163e;
+  background: #ebeef5;
+}
+
 
 .radio {
   padding: 0.5rem 1rem;
@@ -181,3 +201,17 @@ i{
  
 }
 
+.radioform{
+  text-align: left;
+}
+
+.label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.hypo{
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+}
