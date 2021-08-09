@@ -7,8 +7,7 @@ const Hypo = () => {
 
     const handlehypo = event => {
         event.preventDefault()
-        var ans = Math.sqrt(((Number(a1))*(Number(a1))) + ((Number(b1))*(Number(b1)))
-            ) 
+        var ans = Math.sqrt(Number(a1) * Number(a1) + Number(b1) * Number(b1)); 
             setresult(ans);   
         }
 

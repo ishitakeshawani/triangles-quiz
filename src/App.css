@@ -10,6 +10,7 @@
 body{
   background: var(--priary-color);
   font-family: 'Mali', cursive;
+  
 
 }
 
@@ -203,7 +204,8 @@ i{
 
 .radioform{
   text-align: left;
-}
+} 
+
 
 .label {
   font-weight: bold;
@@ -214,4 +216,45 @@ i{
   text-align: center;
   color: white;
   padding-top: 10%;
+}
+
+
+.verticleMiddle {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 94vh;
+  text-align: center;
+  /* margin: 2rem 1rem; */
+}
+
+
+.quiz{
+  width: 100%;
+  text-align: center;
+  max-width: 600px;
+  color: white;
+  padding-top: 10%;
+} 
+
+
+.ques{ 
+  padding: 0.5rem 1rem;
+  white-space: normal;
+}
+
+.ans{
+  background-color: var(--link-color);
+  margin-top: 1rem;
+  color: #06163e;
+  margin-bottom: 1rem;
+} 
+
+.label-que{
+  display: block;
+}
+
+.label{
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }

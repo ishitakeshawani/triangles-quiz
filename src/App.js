@@ -3,7 +3,7 @@ import './App.css';
 import Angle from './comps/Angle';
 import Area from './comps/Area/Area';
 import Hypo from './comps/Hypo';
-import Quiz from './comps/Quiz';
+import Quiz from './comps/quiz/Quiz';
 import Home from './comps/Home';
 import Header from "./comps/Header";
 
