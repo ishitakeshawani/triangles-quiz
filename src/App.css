@@ -12,6 +12,8 @@ body{
   font-family: 'Mali', cursive;
   
 
+  
+
 }
 
 .nav{  
@@ -222,6 +224,7 @@ i{
 .verticleMiddle {
   display: flex;
   justify-content: center; 
+  flex-wrap: wrap;
   align-items: center;
   min-height: 94vh;
   text-align: center;
@@ -230,9 +233,9 @@ i{
 
 
 .quiz{
-  width: 100%;
-  text-align: center;
-  max-width: 600px;
+  min-width: 250px;
+  text-align: center; 
+  max-width: 550px;
   color: white;
   padding-top: 10%;
 } 
@@ -258,3 +261,5 @@ i{
   cursor: pointer;
   padding: 0.5rem 0.5rem 0.5rem 0;
 }
+
+
