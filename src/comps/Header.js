@@ -4,17 +4,29 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
-      <div className="nav">
-        <Link className="title" to="/">
-          Traingle Quiz
-        </Link>
-        <div className="top-right">
-          <Link to="/angle">Angles</Link>
-          <Link to="/area">Area</Link>
-          <Link to="/hypotenuse">Hypotenuse</Link>
-          <Link to="/quiz">Quiz</Link>
-        </div>
-      </div>
+      <nav className="nav">
+        <ul className="top-right">
+          <li>
+            <Link className="title" to="/">
+              Traingle Quiz
+            </Link>
+          </li>
+          <div>
+            <li>
+              <Link to="/angle">Angles</Link>
+            </li>
+            <li>
+              <Link to="/area">Area</Link>
+            </li>
+            <li>
+              <Link to="/hypotenuse">Hypotenuse</Link>
+            </li>
+            <li>
+              <Link to="/quiz">Quiz</Link>
+            </li>
+          </div>
+        </ul>
+      </nav>
     </>
   );
 }

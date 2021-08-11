@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 
-
 const Quiz = () => {
   const initialUserAnswersState = {
     1: "",
@@ -95,6 +94,7 @@ const Quiz = () => {
     setcorrectans(false);
   };
   return (
+    <div>
     <div className="verticleMiddle">
       <div className="quiz">
         <form className="radioform" onSubmit={handleoutput}>
@@ -475,6 +475,7 @@ const Quiz = () => {
         <h2>Score will be shown here-</h2>
         <div className="output">{`Score: ${output}`}</div>
       </div>
+    </div>
     </div>
   );
 }

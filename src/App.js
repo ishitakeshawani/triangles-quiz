@@ -12,8 +12,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      <Header />
-        <Route path="/" component={Home}   exact />
+        <Header />
+        <Route path="/" component={Home} exact />
         <Route path="/angle" component={Angle} />
         <Route path="/area" component={Area} />
         <Route path="/hypotenuse" component={Hypo} />

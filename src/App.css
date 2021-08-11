@@ -10,14 +10,9 @@
 body{
   background: var(--priary-color);
   font-family: 'Mali', cursive;
-  
-
-  
-
 }
 
 .nav{  
-  list-style: none;
   color: var(--secondary-color);
 }
 
@@ -34,7 +29,7 @@ a{
 }
 
 .top-right{
-  float: right;
+ text-align: left;
 }
 
 .top-right-i{
@@ -87,13 +82,15 @@ footer {
 
 ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  /* justify-content: center;
+  align-items: center; */ 
   padding-inline-start: 0px;
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+
 
 i{
   font-size: x-large;
@@ -152,9 +149,6 @@ i{
   max-width: 550px;
   color: white;
   text-align: center;
-  /* display: grid;
-  justify-content: center!important;
-  flex-direction: column; */
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -222,13 +216,9 @@ i{
 
 
 .verticleMiddle {
-  display: flex;
-  justify-content: center; 
-  flex-wrap: wrap;
-  align-items: center;
+ 
   min-height: 94vh;
   text-align: center;
-  /* margin: 2rem 1rem; */
 }
 
 
@@ -239,6 +229,7 @@ i{
   color: white;
   padding-top: 10%;
   text-align: center;
+  margin: auto;
 } 
 
 
@@ -249,7 +240,7 @@ i{
 
 .ans{
   background-color: var(--link-color);
-  margin-top: 1rem;
+  margin-top: 1%;
   color: #06163e;
   margin-bottom: 1rem;
 } 
@@ -262,5 +253,3 @@ i{
   cursor: pointer;
   padding: 0.5rem 0.5rem 0.5rem 0;
 }
-
-
